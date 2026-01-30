@@ -5,13 +5,20 @@ public class Main{
         
         
         Student james = new Student();
-        System.out.println(james);
+
+        james.name = "James Kariuki";
+        james.gpa = 3.5f;
+        james.grade = 56;
+
+        System.out.println(james.grade);
+        System.out.println(james.name);
+        System.out.println(james.gpa);
     }
 
     static class Student{
-        int [] grade = new int [5];
-        String [] name = new String [5];
-        float [] gpa = new float [5];
+        int grade;
+        String name;
+        float gpa;
 
     }
 }
